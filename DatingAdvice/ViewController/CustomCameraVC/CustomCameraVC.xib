@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCameraVC">
+            <connections>
+                <outlet property="bottomLayerBaseView" destination="7ux-Uz-sgb" id="qdN-hh-37K"/>
+                <outlet property="previewView" destination="Rg9-7b-fpu" id="2Sw-NB-DZo"/>
+                <outlet property="topHeaderView" destination="YUg-YA-eox" id="zaA-zp-Uol"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view_container" destination="dYI-HP-kcd" id="wGN-6e-mzh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS7-I0-JZA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYI-HP-kcd" userLabel="container">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-7b-fpu" customClass="AAPLPreviewView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-Uz-sgb">
+                                            <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="cM4-L6-vDA"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="7ux-Uz-sgb" secondAttribute="trailing" id="CnR-88-Seg"/>
+                                        <constraint firstAttribute="bottom" secondItem="7ux-Uz-sgb" secondAttribute="bottom" id="PB8-Bv-vLS"/>
+                                        <constraint firstItem="7ux-Uz-sgb" firstAttribute="leading" secondItem="Rg9-7b-fpu" secondAttribute="leading" id="V8H-U6-yl5"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUg-YA-eox">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <color key="backgroundColor" red="0.17192440940048953" green="0.3333333432674408" blue="0.1170291321816164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="eTa-uX-7V2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Rg9-7b-fpu" secondAttribute="trailing" id="2Mr-pc-UgE"/>
+                                <constraint firstItem="Rg9-7b-fpu" firstAttribute="top" secondItem="dYI-HP-kcd" secondAttribute="top" id="9zZ-04-KN7"/>
+                                <constraint firstItem="YUg-YA-eox" firstAttribute="leading" secondItem="dYI-HP-kcd" secondAttribute="leading" id="Abo-Sv-RtZ"/>
+                                <constraint firstAttribute="bottom" secondItem="Rg9-7b-fpu" secondAttribute="bottom" id="MWG-ad-OO0"/>
+                                <constraint firstItem="Rg9-7b-fpu" firstAttribute="leading" secondItem="dYI-HP-kcd" secondAttribute="leading" id="RCf-Aa-VXv"/>
+                                <constraint firstItem="YUg-YA-eox" firstAttribute="top" secondItem="dYI-HP-kcd" secondAttribute="top" id="VQ0-nT-BNq"/>
+                                <constraint firstAttribute="bottom" secondItem="Rg9-7b-fpu" secondAttribute="bottom" id="Zbd-En-liE"/>
+                                <constraint firstAttribute="trailing" secondItem="YUg-YA-eox" secondAttribute="trailing" id="o3x-4a-L0p"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dYI-HP-kcd" firstAttribute="leading" secondItem="rS7-I0-JZA" secondAttribute="leading" id="2u0-wk-oVZ"/>
+                        <constraint firstItem="dYI-HP-kcd" firstAttribute="centerX" secondItem="rS7-I0-JZA" secondAttribute="centerX" id="Ub1-xR-oZz"/>
+                        <constraint firstItem="dYI-HP-kcd" firstAttribute="top" secondItem="rS7-I0-JZA" secondAttribute="top" id="WuU-Cp-3gI"/>
+                        <constraint firstAttribute="trailing" secondItem="dYI-HP-kcd" secondAttribute="trailing" id="st4-5q-rma"/>
+                        <constraint firstItem="dYI-HP-kcd" firstAttribute="centerY" secondItem="rS7-I0-JZA" secondAttribute="centerY" id="yCU-Xk-DJa"/>
+                        <constraint firstAttribute="bottom" secondItem="dYI-HP-kcd" secondAttribute="bottom" id="zdt-4D-xDc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rS7-I0-JZA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6QS-C1-fuA"/>
+                <constraint firstAttribute="bottom" secondItem="rS7-I0-JZA" secondAttribute="bottom" id="7C4-h0-390"/>
+                <constraint firstItem="rS7-I0-JZA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Af0-Vi-0dx"/>
+                <constraint firstAttribute="trailing" secondItem="rS7-I0-JZA" secondAttribute="trailing" id="oi5-J5-CoP"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

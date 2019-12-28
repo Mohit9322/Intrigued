@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManageMessage" representedClassName="ManageMessage" syncable="YES" codeGenerationType="class">
+        <attribute name="message_ClintId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_Id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_RecieverId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="message_RoomId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_SenderId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_Text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message_type" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="msg_Type" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="msgOrder_Id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_profileImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoThumbImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RecentChat" representedClassName="RecentChat" syncable="YES" codeGenerationType="class">
+        <attribute name="lastseen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_CreateDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_Id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_Item" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="room_LastMsg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_LastMsgTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_members" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="room_OwnerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room_UnreadMsg" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManageMessage" positionX="-45" positionY="0" width="128" height="240"/>
+        <element name="RecentChat" positionX="-18" positionY="90" width="128" height="180"/>
+    </elements>
+</model>

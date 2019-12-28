@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTransactionHistoryCell" rowHeight="68" id="PtE-aD-GK5" customClass="UserTransactionHistoryCell" customModule="Intrigued" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PtE-aD-GK5" id="ro9-ML-Sgz">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sumit Sharma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxf-nU-Bob">
+                        <rect key="frame" x="12" y="7" width="88.5" height="18"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-Feb-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-Q6-Fpz">
+                        <rect key="frame" x="236" y="9" width="81" height="19.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-v7-Kv7">
+                        <rect key="frame" x="12" y="31.5" width="121" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUW-Mp-hH7">
+                        <rect key="frame" x="138" y="31" width="33.5" height="18"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W3G-Q6-Fpz" firstAttribute="top" secondItem="ro9-ML-Sgz" secondAttribute="top" constant="9" id="BOB-hW-CBG"/>
+                    <constraint firstItem="Ple-v7-Kv7" firstAttribute="top" secondItem="Nxf-nU-Bob" secondAttribute="bottom" constant="6.5" id="KFp-eF-PA9"/>
+                    <constraint firstItem="wUW-Mp-hH7" firstAttribute="centerY" secondItem="Ple-v7-Kv7" secondAttribute="centerY" id="UrN-OS-Ugc"/>
+                    <constraint firstItem="Nxf-nU-Bob" firstAttribute="top" secondItem="ro9-ML-Sgz" secondAttribute="top" constant="7" id="UxR-Db-ysi"/>
+                    <constraint firstItem="Ple-v7-Kv7" firstAttribute="leading" secondItem="Nxf-nU-Bob" secondAttribute="leading" id="ZEo-ck-U7K"/>
+                    <constraint firstItem="Nxf-nU-Bob" firstAttribute="leading" secondItem="ro9-ML-Sgz" secondAttribute="leading" constant="12" id="diI-bo-4bM"/>
+                    <constraint firstItem="wUW-Mp-hH7" firstAttribute="leading" secondItem="Ple-v7-Kv7" secondAttribute="trailing" constant="5" id="i5l-fA-YBf"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nxf-nU-Bob" secondAttribute="trailing" constant="108" id="yJp-py-5ly"/>
+                    <constraint firstAttribute="trailing" secondItem="W3G-Q6-Fpz" secondAttribute="trailing" constant="8" id="yqg-QL-IHp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amount_lbl" destination="wUW-Mp-hH7" id="MDo-Cz-2gV"/>
+                <outlet property="date_time_lbl" destination="W3G-Q6-Fpz" id="fWY-KL-Vlm"/>
+                <outlet property="titleName" destination="Nxf-nU-Bob" id="MO8-Il-8Wn"/>
+            </connections>
+            <point key="canvasLocation" x="-45.5" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module SVGeocoder {
+  umbrella header "SVGeocoder-umbrella.h"
+
+  export *
+  module * { export * }
+}
